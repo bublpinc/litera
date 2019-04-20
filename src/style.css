@@ -1,0 +1,64 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.page {}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+/* шапка */
+.header {
+	height: 100px;
+	background-color: #ccc;
+	padding: 20px 0 10px;
+	box-sizing: border-box;
+}
+
+.logo {
+	color: red;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li {
+	float: left;
+	margin-right: 10px;
+}
+
+/* основная часть */
+.content {
+	margin: 20px 0 0;
+	border: 1px solid green;
+}
+
+.content-block {
+	display: flex;
+}
+
+.sidebar {
+	width: 200px;
+	border: 1px dashed green;
+}
+
+.sidebar__title {
+	margin: 0 0 20px;
+}
+
+.article-container {
+	padding-left: 20px;
+}
+
+/* подвал сайта */
+.footer {
+	background-color: #ccc;
+	padding: 20px 0 20px;
+}
