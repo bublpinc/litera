@@ -5,6 +5,7 @@ body{
 
 .page {}
 
+
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -26,12 +27,15 @@ body{
 
 .navigation {
 	list-style: none;
-	padding: 0;
+	padding: 5px 0 20px;
+	
 }
 
 .navigation li {
 	float: left;
-	margin-right: 10px;
+	border: 0;
+	margin-right: 20px;
+	text-decoration: none;
 }
 
 /* основная часть */
@@ -61,4 +65,10 @@ body{
 .footer {
 	background-color: #ccc;
 	padding: 20px 0 20px;
+}
+.site-title {
+	margin: 0;
+	padding: 0;
+	color: #0eabb0;
+	font-family: 'Roboto', Tahoma, Arial;
 }
