@@ -3,7 +3,11 @@ body{
 	margin: 0;
 }
 
-.page {}
+.page {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
 
 
 .container {
@@ -11,10 +15,16 @@ body{
 	margin: 0 auto;
 }
 
+
+
 /* шапка */
+
+a{
+	text-decoration: none;
+}
+
 .header {
 	height: 100px;
-	background-color: #ccc;
 	padding: 20px 0 10px;
 	box-sizing: border-box;
 }
@@ -22,24 +32,56 @@ body{
 .logo {
 	color: red;
 	font-size: 24px;
-	text-decoration: none;
+}
+
+.site-title {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0;
+	color: #0eabb0;
+	font-family: 'Great Vibes', cursive;
+}
+
+nav{
+	width: 960px;
+	margin: 0 auto;
+}
+
+nav::before{
+	content: '';
+	display: block;
+	height: 50px;
+	width: 100%;
+	background: grey;
+	position: absolute;
+	left: 0;
+	z-index: -1;
 }
 
 .navigation {
+	margin: 0;
+	padding: 0;
 	list-style: none;
-	padding: 5px 0 20px;
-	
+	height: 50px;
 }
 
 .navigation li {
 	float: left;
-	border: 0;
-	margin-right: 20px;
-	text-decoration: none;
 }
 
+.navigation li a{
+	color: white;
+	display: block;
+	height: 50px;
+	padding: 0 30px;
+	text-transform: uppercase;
+	line-height: 50px;
+}
+
+
+
 /* основная часть */
-.content {
+/*.content {
 	margin: 20px 0 0;
 	border: 1px solid green;
 }
@@ -62,13 +104,7 @@ body{
 }
 
 /* подвал сайта */
-.footer {
+/*.footer {
 	background-color: #ccc;
 	padding: 20px 0 20px;
-}
-.site-title {
-	margin: 0;
-	padding: 0;
-	color: #0eabb0;
-	font-family: 'Roboto', Tahoma, Arial;
 }
