@@ -78,7 +78,46 @@ nav::before{
 	line-height: 50px;
 }
 
+.navigation li a:hover{
+	background: #0eabb0;
+}
 
+/*выплывающее меню*/
+.navigation > li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.navigation > li:last-child{
+	margin-right: 0;
+}
+.navigation li ul{
+	position: absolute;
+	width: 120px;
+	left: 115px;
+	z-index: 5;
+	display: none;
+	list-style: none;
+}
+.navigation li > ul li a{	
+	text-transform: uppercase;
+	background: #919291;	
+}
+
+.navigation li:hover > ul{
+	display: block;
+}
+.navigation2 {
+	position: absolute;
+  	width: 90%;
+  	z-index: 10;
+}
+.navigation2 > li {
+	width: 100%;
+}
+.navigation2 li a {
+	padding: 0;
+	text-align: center;
+}
 
 /* основная часть */
 /*.content {
